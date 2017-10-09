@@ -28,6 +28,13 @@
 		7BB7F9A51F8BE47500821CD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BB7F9A81F8BE47500821CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BB7F9AA1F8BE47500821CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BB7F9B11F8BE53400821CD6 /* powerUp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = powerUp.wav; sourceTree = "<group>"; };
+		7BB7F9B21F8BE53500821CD6 /* fail.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fail.wav; sourceTree = "<group>"; };
+		7BB7F9B31F8BE53500821CD6 /* levelUp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = levelUp.wav; sourceTree = "<group>"; };
+		7BB7F9B41F8BE53500821CD6 /* move.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = move.wav; sourceTree = "<group>"; };
+		7BB7F9B51F8BE53500821CD6 /* MenuHighscoreMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MenuHighscoreMusic.mp3; sourceTree = "<group>"; };
+		7BB7F9B61F8BE53500821CD6 /* background.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = background.wav; sourceTree = "<group>"; };
+		7BB7F9B71F8BE53500821CD6 /* levelCompleted.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = levelCompleted.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +67,56 @@
 		7BB7F9971F8BE47500821CD6 /* ColorTrekClone */ = {
 			isa = PBXGroup;
 			children = (
+				7BB7F9BA1F8BE57F00821CD6 /* Model */,
+				7BB7F9B91F8BE57800821CD6 /* View */,
+				7BB7F9B81F8BE56E00821CD6 /* Controller */,
+				7BB7F9B01F8BE51A00821CD6 /* Resources */,
 				7BB7F9981F8BE47500821CD6 /* AppDelegate.swift */,
-				7BB7F99A1F8BE47500821CD6 /* GameScene.sks */,
 				7BB7F99C1F8BE47500821CD6 /* Actions.sks */,
-				7BB7F99E1F8BE47500821CD6 /* GameScene.swift */,
-				7BB7F9A01F8BE47500821CD6 /* GameViewController.swift */,
 				7BB7F9A21F8BE47500821CD6 /* Main.storyboard */,
 				7BB7F9A51F8BE47500821CD6 /* Assets.xcassets */,
 				7BB7F9A71F8BE47500821CD6 /* LaunchScreen.storyboard */,
 				7BB7F9AA1F8BE47500821CD6 /* Info.plist */,
 			);
 			path = ColorTrekClone;
+			sourceTree = "<group>";
+		};
+		7BB7F9B01F8BE51A00821CD6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7BB7F9B61F8BE53500821CD6 /* background.wav */,
+				7BB7F9B21F8BE53500821CD6 /* fail.wav */,
+				7BB7F9B71F8BE53500821CD6 /* levelCompleted.wav */,
+				7BB7F9B31F8BE53500821CD6 /* levelUp.wav */,
+				7BB7F9B51F8BE53500821CD6 /* MenuHighscoreMusic.mp3 */,
+				7BB7F9B41F8BE53500821CD6 /* move.wav */,
+				7BB7F9B11F8BE53400821CD6 /* powerUp.wav */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7BB7F9B81F8BE56E00821CD6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7BB7F9A01F8BE47500821CD6 /* GameViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7BB7F9B91F8BE57800821CD6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7BB7F99E1F8BE47500821CD6 /* GameScene.swift */,
+				7BB7F99A1F8BE47500821CD6 /* GameScene.sks */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7BB7F9BA1F8BE57F00821CD6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +333,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 999T2QHS45;
 				INFOPLIST_FILE = ColorTrekClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreamerongo.ColorTrekClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -301,6 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 999T2QHS45;
 				INFOPLIST_FILE = ColorTrekClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreamerongo.ColorTrekClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
